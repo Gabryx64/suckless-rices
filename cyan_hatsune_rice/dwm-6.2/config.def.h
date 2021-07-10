@@ -6,9 +6,10 @@ static const unsigned int gappx     = 5;        /* gaps size between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10",
-                                        "Font Awesome 5 Free,Font Awesome 5 Free Solid:size=10",
-                                        "Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular,size=10" };
+static const char *fonts[]          = {
+					"Liberation Mono:style=Regular,size=12",
+					"Font Awesome 5 Free,Font Awesome 5 Free Solid:size=12",
+                                        "Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular,size=12" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_dark_cyan[]   = "#007777";
 static const char col_gray1[]       = "#222222";
@@ -31,7 +32,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "\uf120", "\uf121", "\uf0ac", "\uf07c", "\uf0c9", "\uf0c9", "\uf0c9", "\uf0c9", "\uf013" };
+static const char *tags[] = { "\uf120", "\uf121", "\uf268", "\uf392", "\uf1bc", "\uf290", "\uf07c", "\uf0c9", "\uf013" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -44,7 +45,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
